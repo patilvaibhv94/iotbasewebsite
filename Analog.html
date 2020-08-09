@@ -1,0 +1,142 @@
+<html>
+  <head>
+      <title>Analog</title>
+      <style>
+        body 
+        {
+          background-image: none;
+          background-color: #cccccc;
+        }
+        label 
+        {
+           color:black;
+           padding: 8px;
+           font-family: Arial;
+        }
+      </style>
+  </head>
+  <body>
+  <h1><center>Analog Inputs</center></h1>
+  <form action="analog.php" method="POST">
+  <label for="selct">Choose Any One:</label>
+<select name="select1" id="selct">
+  <option value="PLC(Ehernet)">PLC(Ehernet)</option>
+  <option value="Energymeter(Modbus)">Energy Meter(Modbus)</option>
+  <option value="Watermeter(Modbus)">Water Meter(Modbus)</option>
+  <option value="Cameraport">Camera Port</option>
+  <option value="Flowmeter">Flow Meter(RS485)</option>
+  <option value="VFD(Ethernet)">VFD(Ethernet)</option>
+  <option value="Solarinverters(Ehernet)">Solar Inverters(Ethernet)</option>
+   <option value="Weatherstation">Wether Station</option> 
+</select><br><br><hr>
+<label for="inpt">Give The Input:</label>
+<select name="input1" id="inpt">
+  <option value="17">Input:17</option>
+  <option value="18">Input:18</option>
+  <option value="19">Input:19</option>
+  <option value="20">Input:20</option>
+  <option value="21">Input:21</option>
+  <option value="22">Input:22</option>
+  <option value="23">Input:23</option>
+  <option value="24">Input:24</option> 
+  <option value="25">Input:25</option>
+  <option value="">Input:26</option> 
+</select><br><br><hr>
+
+<!--Presure-->
+<label>PRESSURE</label><br><br>
+  
+  <label for="pressurerange">Range:</label>&nbsp &nbsp &nbsp
+	
+  <label for="pressurell">Lower Limit:</label>
+  <input type="text" id="pressurerll" name="pll">
+  <label for="pressureul">Upper Limit:</label>
+  <input type="text" id="pressureul" name="pul"><br><br>
+  <label for="pressureunit">Units:</label>&nbsp &nbsp &nbsp &nbsp
+   <label for="pressurekg">KG:</label>
+  <input type="text" id="pressurekg" name="pkg"><br><br>
+  <label >Graph:</label>&nbsp &nbsp &nbsp
+  <label for="pressurexaxis">X-axis:</label>
+  <input type="text" id="pressurexaxis" name="pxaxis">
+  <label for="pressureyaxis">Y-axis:</label>
+  <input type="text" id="pressureyaxis" name="pyaxis"><br><br>
+  <hr>
+  
+  <!-- Flow-->
+  <label>FLOW</label><br><br>
+  
+  <label for="flowrange">Range:</label>&nbsp &nbsp &nbsp
+
+  <label for="flowll">Lower Limit:</label>
+  <input type="text" id="flowrll" name="fll">
+  <label for="flowul">Upper Limit:</label>
+  <input type="text" id="flowul" name="ful"><br><br>
+  <label for="flowunit">Units:</label>&nbsp &nbsp &nbsp &nbsp
+  <label for="flowkg">kg/cm<sup>2</sup>:</label>
+  <input type="text" id="flowkg" name="fkg"><br><br>
+  <label >Graph:</label>&nbsp &nbsp &nbsp
+  <label for="flowxaxis">X-axis:</label>
+  <input type="text" id="flowxaxis" name="fxaxis">
+  <label for="flowyaxis">Y-axis:</label>
+  <input type="text" id="flowyaxis" name="fyaxis"><br><br>
+  <hr>
+
+  
+  <!--Temperature-->
+<label>TEMPERATURE</label><br><br>
+  
+  <label for="temprange">Range:</label>&nbsp &nbsp &nbsp
+  <label for="templl">Lower Limit:</label>
+  <input type="text" id="templl" name="tll">
+  <label for="tempul">Upper Limit:</label>
+  <input type="text" id="tempul" name="tul"><br><br>
+  <label for="tempunit">Units:</label>&nbsp &nbsp &nbsp &nbsp
+  <label for="tempkg">Deg C:</label>
+  <input type="text" id="tempkg" name="tkg"><br><br>
+  <label >Graph:</label>&nbsp &nbsp &nbsp
+  <label for="tempxaxis">X-axis:</label>
+  <input type="text" id="tempxaxis" name="txaxis">
+  <label for="tempyaxis">Y-axis:</label>
+  <input type="text" id="tempyaxis" name="tyaxis"><br><br>
+  
+  <hr>
+  <!-- Level-->
+  <label>LEVEL</label><br><br>
+  
+  <label for="levelrange">Range:</label>&nbsp &nbsp &nbsp
+  <label for="levelll">Lower Limit:</label>
+  <input type="text" id="levelll" name="lll">
+  <label for="levelul">Upper Limit:</label>
+  <input type="text" id="levelul" name="lul"><br><br>
+  <label for="levelunit">Units:</label>&nbsp &nbsp &nbsp &nbsp
+  <label for="levelkg">Percentage:</label>
+  <input type="text" id="levelkg" name="lkg"><br><br>
+  <label >Graph:</label>&nbsp &nbsp &nbsp
+  <label for="levelxaxis">X-axis:</label>
+  <input type="text" id="levelxaxis" name="lxaxis">
+  <label for="levelyaxis">Y-axis:</label>
+  <input type="text" id="levelyaxis" name="lyaxis"><br><br>
+  <hr>
+  
+  <!--xxxxx---->
+<label>xxxxx:</label><br><br>
+  
+  <label for="xrange">Range:</label>&nbsp &nbsp &nbsp
+  <label for="xll">Lower Limit:</label>
+  <input type="text" id="xll" name="xll">
+  <label for="xul">Upper Limit:</label>
+  <input type="text" id="xul" name="xul"><br><br>
+  <label for="xunit">Units:</label>&nbsp &nbsp &nbsp &nbsp
+  <label for="xkg">Percentage:</label>
+  <input type="text" id="xkg" name="xkg"><br><br>
+  <label >Graph:</label>&nbsp &nbsp &nbsp
+  <label for="xxaxis">X-axis:</label>
+  <input type="text" id="xxaxis" name="xxaxis">
+  <label for="xyaxis">Y-axis:</label>
+  <input type="text" id="xyaxis" name="xyaxis"><br><br>
+  <hr>
+<input type="submit" name="submit" value="Submit">
+</form>
+  </body>
+ </html>
+	
